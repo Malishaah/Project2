@@ -1,53 +1,96 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 body {
-    background-color: #f5f5f5;
+  background-color: #f5f5f5;
 }
 
+// Variables
+$red-color: #ff0000;
+$blue-color: #007bff;
+$dark-color: #333;
+$header-height: 60px;
+$shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+// Sticky header
 header {
-    background-color: #ff0000;
-    padding: 10px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: $shadow;
+
+  .top-bar {
+    background-color: $dark-color;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+
+    .user-options {
+      display: flex;
+      gap: 10px;
+
+      a {
+        color: $blue-color;
+        font-size: 14px;
+        text-decoration: none;
+      }
+
+      .buy-lottery {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .main-header {
+    background-color: $red-color;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: $header-height;
+
     .logo img {
-        width: 150px;
+      width: 150px;
     }
+
     nav {
-        ul {
-            list-style-type: none;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            li {
-                margin-right: 15px;
-                a {
-                    text-decoration: none;
-                    color: white;
-                    font-weight: bold;
-                }
-            }
+      ul {
+        list-style-type: none;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        li a {
+          text-decoration: none;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
         }
-        .user-options {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            a {
-                color: white;
-                margin-left: 10px;
-            }
-            .buy-lottery {
-                background-color: #00b100;
-                padding: 5px 10px;
-                border-radius: 5px;
-                color: white;
-                font-weight: bold;
-            }
-        }
+      }
     }
+
+    .search-icon {
+      img {
+        width: 20px;
+        height: 20px;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
 }
+
 
 .hero {
     background-color: #d90000;
