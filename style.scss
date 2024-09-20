@@ -1,7 +1,7 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  // margin: 0;
+  // padding: 0;
+  // box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
 
@@ -26,7 +26,7 @@ header {
   box-shadow: $shadow;
 
   .top-bar {
-    background-color: $dark-color;
+    background-color: $border-colors;
     padding: 10px 20px;
     display: flex;
     justify-content: flex-end;
@@ -110,7 +110,7 @@ header {
             }
         }
         .cta-button {
-            background-color: #00b100;
+            background-color: #ffb51a;
             color: white;
             padding: 10px 20px;
             border-radius: 5px;

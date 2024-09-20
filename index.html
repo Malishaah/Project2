@@ -7,20 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Svenska Postkodlotteriet</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
     <header>
-        <div class="top-bar">
-            <div class="user-options">
-                <a href="#">Logga in</a>
-                <a href="#" class="buy-lottery">Köp lott</a>
-            </div>
+        <div class="logo">
+            <img src="images/logo.png" alt="Svenska Postkodlotteriet logo">
         </div>
         <div class="main-header">
-            <div class="logo">
-                <img src="images/logo.png" alt="Svenska Postkodlotteriet logo">
-            </div>
+
             <nav>
                 <ul>
                     <li><a href="#">Erbjudanden</a></li>
@@ -31,10 +27,14 @@
                     <li><a href="#">TV</a></li>
                     <li><a href="#">Om oss</a></li>
                     <li><a href="#">Kundservice</a></li>
+                    <li>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                        <i class="fas fa-user"></i>
+                        <a href="#" class="login">Logga in</a>
+                        <a href="#" class="buy-ticket">Köp lott</a>
+                    </li>
                 </ul>
-                <div class="search-icon">
-                    <a href="#"><img src="images/search-icon.png" alt="Search"></a>
-                </div>
+                
             </nav>
         </div>
     </header>
@@ -43,7 +43,6 @@
         <div class="content">
             <div class="left-content">
                 <img src="images/presenters.png" alt="Presenters">
-                <button class="cta-button">Köp din lott</button>
             </div>
         </div>
     </section>
@@ -51,13 +50,14 @@
     <main>
         <section class="plus-premium-section">
             <h2>Upplev mer med Plus och Premium</h2>
+            <button class="cta-button">Köp din lott</button>
             <p>Få fler vinstchanser. Uppgradera din lott till Plus eller Premium senast den 30 september.</p>
 
             <div class="cards-container">
                 <div class="card plus-card">
                     <img src="images/plus-image.png" alt="Postkodlotteriet Plus">
                 </div>
-                <div class="card premium-card">
+                <div class="card premium">
                     <img src="images/premium-image.png" alt="Postkodlotteriet Premium">
                 </div>
             </div>
@@ -67,42 +67,43 @@
         <div class="container">
             <div class="card">
                 <img src="images/jubla-ikapp.png" alt="Celebrate with neighbors">
-                <div class="content">
+                <div>
                     <h3>Många nya vinster väntar</h3>
                     <p>Med en enda lott har du chansen.</p>
-                    <a href="#">Se allt du kan vinna</a>
+                    <button class="cta-button" href="#">Se allt du kan vinna</a>
                 </div>
             </div>
 
             <div class="card">
                 <img src="images/vinn-adress.png" alt="Win at your address">
-                <div class="content">
+                <div>
                     <h3>Du vinner på din adress</h3>
                     <p>Vinstchanser, vinnare och välgörenhet.</p>
-                    <a href="#">Upptäck Postkodlotteriet</a>
+                    <button class="cta-button" href="#">Upptäck Postkodlotteriet</a>
                 </div>
             </div>
 
             <div class="card">
                 <img src="images/har-du-vunnit.png" alt="Have you won?">
-                <div class="content">
+                <div>
                     <h3>Har du vunnit idag?</h3>
                     <p>Logga in och se om det är din tur.</p>
-                    <a href="#">Rätta din lott</a>
+                    <button class="cta-button" href="#">Rätta din lott</a>
                 </div>
             </div>
         </div>
 
         <div class="offer-section">
             <div class="offer-content">
-                <div class="text-content">
+                
+                <div class="image-content">
+                    <img class="puff" src="images/Puff.png" alt="Spela spelet och vinn 119 miljoner">
+                </div>
+                <div class="text-content"></div>
                     <h2>Spela spelet – och få ett bra erbjudande</h2>
                     <p>Om du fångar gulduverten och når 120 poäng, får du ta del av ett bra erbjudande. Köp din lott 180
                         kr/mån och få kryddkvarnar från Le Creuset (värde 679 kr) på köpet.</p>
-                    <a href="#">Börja spela</a>
-                </div>
-                <div class="image-content">
-                    <img src="images/Puff.png" alt="Spela spelet och vinn 119 miljoner">
+                        <button class="cta-button" href="#">Börja spela</a>
                 </div>
             </div>
         </div>
@@ -110,7 +111,7 @@
         <div class="contribution-section">
             <div class="contribution-content">
                 <div class="image-content">
-                    <img src="images/lion-cub.png" alt="Lion cub image">
+                    <img class="puff" src="images/lion-cub.png" alt="Lion cub image">
                 </div>
                 <div class="text-content">
                     <h2>Var med och bidra</h2>
@@ -120,7 +121,7 @@
                         <strong>minst 1 miljard</strong> av överskottet till 61 ideella organisationer som gör världen
                         lite bättre.
                     </p>
-                    <a href="#">Läs mer om Postkodeffekten →</a>
+                    <button class="cta-button" href="#">Läs mer om Postkodeffekten →</a>
                 </div>
             </div>
         </div>
