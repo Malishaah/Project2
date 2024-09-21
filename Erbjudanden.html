@@ -7,20 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Svenska Postkodlotteriet</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div class="top-bar">
-            <div class="user-options">
-                <a href="#">Logga in</a>
-                <a href="#" class="buy-lottery">Köp lott</a>
-            </div>
+        <div>
+            <a href="index.html"><img class="logo" src="images/logo.png" alt="Svenska Postkodlotteriet logo"></a>
         </div>
         <div class="main-header">
-            <div class="logo">
-                <img src="images/logo.png" alt="Svenska Postkodlotteriet logo">
-            </div>
             <nav>
                 <ul>
                     <li><a href="#">Erbjudanden</a></li>
@@ -31,96 +29,86 @@
                     <li><a href="#">TV</a></li>
                     <li><a href="#">Om oss</a></li>
                     <li><a href="#">Kundservice</a></li>
+                    <li><i class="fas fa-user"></i>
+                        <a href="#" class="login">Logga in</a>
+                    </li>
+                    <li><a href="#" class="buy-ticket">Köp lott</a></li>
+                    <li><a href="#"><i class="fas fa-search"></i></a></li>
                 </ul>
-                <div class="search-icon">
-                    <a href="#"><img src="images/search-icon.png" alt="Search"></a>
-                </div>
+
             </nav>
         </div>
     </header>
     <main>
         <div class="offer-section">
-            <h1>Erbjudanden</h1>
+            <h1 class="erb">Erbjudanden</h1>
             <div class="offer-container">
                 <div class="offer-image">
-                    <img src="images/handdukar.jpg" alt="Handdukar från Lexington">
+                    <img class="style" src="images/handdukar.jpg" alt="Handdukar från Lexington">
                 </div>
                 <div class="offer-details">
                     <p><strong>Handdukar från Lexington</strong></p>
                     <p>Värde 700kr, max 2 st/kund</p>
                     <p>Begränsat antal</p>
-                    <a href="#" class="offer-link">Gå till erbjudandet &rarr;</a>
+                    <button class="cta-button">Gå till erbjudandet &rarr;</button>
                     <p class="small-text">*Se villkor på nästa sida</p>
                 </div>
             </div>
         </div>
+
         <div class="offer-section">
             <div class="offer-container">
                 <div class="offer-image">
-                    <img src="images/Orrefors vinglas.jpg" alt="Orrefors vinglas">
+                    <img class="restyle" src="images/Orrefors-vinglas.jpg" alt="Orrefors vinglas">
                 </div>
                 <div class="offer-details">
                     <p><strong>Orrefors More</strong></p>
                     <p>2-pack kristallglas</p>
                     <p>Värde 230 kr, max 1 st/kund</p>
                     <p>Begränsat antal</p>
-                    <a href="#" class="offer-link">Gå till erbjudandet &rarr;</a>
+                    <button class="cta-button">Gå till erbjudandet &rarr;</button>
                 </div>
             </div>
         </div>
         <div class="offer-section">
             <div class="offer-container">
                 <div class="offer-image">
-                    <img src="images/Orrefors Organic.jpg" alt="Orrefors Organic">
+                    <img class="restyle" src="images/Orrefors-Organic.jpg" alt="Orrefors Organic">
                 </div>
                 <div class="offer-details">
                     <p><strong>Orrefors Organic</strong></p>
                     <p>Klotvas</p>
                     <p>Värde 419 kr, max 1 st/kund</p>
                     <p>Begränsat antal</p>
-                    <a href="#" class="offer-link">Gå till erbjudandet &rarr;</a>
+                    <button class="cta-button">Gå till erbjudandet &rarr;</button>
                 </div>
             </div>
         </div>
         <div class="offer-section">
             <div class="offer-container">
                 <div class="offer-image">
-                    <img src="images/Orrefors Sense Sparkling.jpg" alt="Orrefors Sense Sparkling">
-                </div>
-                <div class="offer-details">
-                    <p><strong>Orrefors Sense Sparkling</strong></p>
-                    <p>2-pack kristallglas</p>
-                    <p>Värde 400 kr, max 1 st/kund</p>
-                    <p>Begränsat antal</p>
-                    <a href="#" class="offer-link">Gå till erbjudandet &rarr;</a>
-                </div>
-            </div>
-        </div>
-        <div class="offer-section">
-            <div class="offer-container">
-                <div class="offer-image">
-                    <img src="images/Ostindia Floris.jpg" alt="Ostindia Floris">
+                    <img class="restyle" src="images/Ostindia-Floris.jpg" alt="Ostindia Floris">
                 </div>
                 <div class="offer-details">
                     <p><strong>Rörstrand Ostindia Floris</strong></p>
                     <p>2-pack muggar</p>
                     <p>Värde 569 kr, max 1 st/kund</p>
                     <p>Begränsat antal</p>
-                    <a href="#" class="offer-link">Gå till erbjudandet &rarr;</a>
+                    <button class="cta-button">Gå till erbjudandet &rarr;</button>
                 </div>
             </div>
         </div>
         <div class="offer-section">
             <div class="offer-container">
                 <div class="offer-image">
-                    <img src="images/Iittala Kastehelmi.jpg" alt="Iittala Kastehelmi">
+                    <img class="restyle" src="images/Iittala-Kastehelmi.jpg" alt="Iittala Kastehelmi">
                 </div>
                 <div class="offer-details">
                     <p><strong>Iittala Kastehelmi</strong></p>
                     <p>2-pack ljuslyktor</p>
                     <p>Värde 399 kr, max 1 st/kund</p>
                     <p>Begränsat antal</p>
-                    <a href="#" class="offer-link">Gå till erbjudandet &rarr;</a>
+                    <button class="cta-button">Gå till erbjudandet &rarr;</button>
                 </div>
             </div>
         </div>

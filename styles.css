@@ -1,10 +1,3 @@
-.cinzel-<uniquifier> {
-    font-family: "Cinzel", serif;
-    font-optical-sizing: auto;
-    font-weight: auto;
-    font-style: normal;
-  }
-
 body {
     background-color: #ffe9b3;
     margin: 0px;
@@ -109,9 +102,6 @@ a:hover{
     padding: 20px;
     align-items: center;
 }
-.main-header .nav {
-    margin-left: 100;
-}
 
  .logo {
     position: absolute;
@@ -133,10 +123,8 @@ nav ul a {
 }
 
 .hero{
-    width: flex;
     display: flex;
     justify-content: center;
-    align-items: center;
     border-radius: 10px;
 }
 
@@ -342,20 +330,8 @@ nav ul a {
     text-align: center;
 }
 
-.offer-link {
-    display: inline-block;
-    margin-top: 10px;
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.offer-link:hover {
-    text-decoration: underline;
-}
-
 .small-text {
-    font-size: 12px;
+    font-size: 16px;
     color: #333;
     margin-top: 10px;
 }
@@ -371,5 +347,29 @@ p {
     color: #333;
     margin-left: 100px;
     margin-right: 100px;
+}
 
+.restyle {
+    border-radius: 10%;
+    width: 400px;
+}
+
+.style {
+    border-radius: 50%;
+    width: 400px;
+}
+
+.offer-details {
+    margin-top: 40px;
+}
+
+.offer-container {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: 0px 150px;
+}
+
+.erb {
+    margin-bottom: 40px;
 }
