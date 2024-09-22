@@ -16,26 +16,25 @@
 <body>
     <header>
         <div>
-            <a href="index.html"><img class="logo" src="images/logo.png" alt="Svenska Postkodlotteriet logo"></a>
+            <img class="logo" src="images/logo.png" alt="Svenska Postkodlotteriet logo">
         </div>
         <div class="main-header">
-            <nav>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav id="nav-menu">
                 <ul>
-                    <li><a href="#">Erbjudanden</a></li>
+                    <li><a href="Erbjudanden.html">Erbjudanden</a></li>
                     <li><a href="#">Lotteriet</a></li>
                     <li><a href="#">Vinster</a></li>
                     <li><a href="#">Vinnare</a></li>
                     <li><a href="#">Välgörenhet</a></li>
                     <li><a href="#">TV</a></li>
-                    <li><a href="#">Om oss</a></li>
                     <li><a href="#">Kundservice</a></li>
-                    <li><i class="fas fa-user"></i>
-                        <a href="#" class="login">Logga in</a>
-                    </li>
+                    <li><i class="fas fa-user"></i><a href="#" class="login">Logga in</a></li>
                     <li><a href="#" class="buy-ticket">Köp lott</a></li>
                     <li><a href="#"><i class="fas fa-search"></i></a></li>
                 </ul>
-
             </nav>
         </div>
     </header>
@@ -113,6 +112,17 @@
             </div>
         </div>
     </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('#nav-menu');
+
+            hamburger.addEventListener('click', function () {
+                navMenu.classList.toggle('show');
+            });
+        });
+    </script>
+
 </body>
 
 </html>
