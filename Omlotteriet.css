@@ -100,7 +100,7 @@ body {
     padding-top: 10px;
 }
 
-.image-container {
+.main-image-container {
     position: relative;
     /* background-color: lightcoral; */
     height: 400px;
@@ -425,7 +425,7 @@ iframe {
         margin-right: 200px;
     }
 
-    .image-container {
+    .main-image-container {
         margin: 50px;
     }
 

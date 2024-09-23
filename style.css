@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: #fff;
+    --black: #333;
+    --gray-10: #f2f2f2;
+    --gray-20: #ececec;
+    --gray-30: #d2d2d2;
+    --gray-50: #999;
+    --gray-70: #666;
+    --gray-90: #333;
+    --red-70: #e80023;
+    --red-80: #bb0020;
+    --red-90: #820014;
+    --blue-70: #0074c3;
+    --blue-90: #00498e;
+}
+
+:root {
+    --font-size: 16;
+    --font-scale: 1.25;
+    --font-from-width: 400;
+    --font-to-width: 750;
+}
+
+.top-section {
+    display: grid;
+    margin: 0 10px;
+    border-bottom: 1px solid var(--gray-50);
+}
+
+.dropdown-container {
+    /* background-color: lightgreen; */
+    margin: 10px 50px;
+}
+
+.dropdown-btn {
+    /* background-color: lightcyan; */
+    position: relative;
+}
+
+.btn {
+    border: none;
+    background-color: #fff;
+    margin-left: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.dropdown-btn i {
+    /* background-color: #00498e; */
+    position: absolute;
+    top: 25%;
+    right: 20px;
+    font-size: 20px;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown-container:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    margin: 5px 10px;
+    display: block;
+    border-radius: 5px;
+    /* margin-top: 10px; */
+    color: var(--black);
+    font-size: 16px;
+    /* background-color: #ffffff; */
+    padding: 12px;
+}
+
+.dropdown-content a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.kontakt-lista {
+    margin-left: 50px;
+    padding: 10px;
+}
+
+.kontakt-info-item {
+    margin-bottom: 10px;
+}
+
+.kontakt-links a {
+    display: block;
+    color: var(--black);
+}
+
+.icons-list {
+    margin: 0 50px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons-list {
+    font-size: 36px;
+}
+
+/* bottom section style */
+.bottom-section {
+    display: grid;
+    margin-top: 50px;
+}
+
+.image-container {
+    /* background-color: lightgreen; */
+    margin: 10px 20px;
+    text-align: center;
+    line-height: 1.5;
+    border-bottom: 1px solid var(--gray-30);
+}
+
+.bottom-image-spel {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 50px;
+}
+
+.bottom-section-text-spektion {
+    margin: 0 80px;
+}
+
+.bottom-image-reklam {
+    width: 50px;
+}
+
+.bottom-section-text-reklam {
+    margin: 0 80px;
+}
+
+.bottom-image-sper {
+    width: 100px;
+}
+
+/* för Ipad */
+@media (min-width: 769px) {
+    .top-section {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .dropdown-container {
+        margin: 5px;
+    }
+
+    .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a {
+        margin: 10px 10px;
+        padding: 0;
+    }
+
+    .icons-list {
+        grid-column: 1 / span 5;
+    }
+
+    .icons-list {
+        margin: 0 80px 20px;
+    }
+
+    .dropdown-btn i {
+        /* background-color: #00498e;
+        position: absolute;
+        top: 25%;
+        right: 20px;
+        font-size: 20px; */
+        display: none;
+    }
+
+    /* bottom section  */
+    .image-container {
+        /* background-color: lightgreen; */
+        margin: 10px;
+        padding: 10px 0;
+        text-align: center;
+        border: 1px solid var(--gray-30);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .bottom-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin:0;
+    }
+
+    .bottom-image-stödlinjen {
+        margin-top: 20px;
+    }
+
+    .bottom-image-reklam {
+        margin-top: 20px;
+    }
+    
+}
+
+/* för dator */
+@media (min-width: 1024px) {
+    .bottom-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin:0;
+    }
+
+    .dropdown-btn i {
+        /* background-color: #00498e;
+        position: absolute;
+        top: 25%;
+        right: 20px;
+        font-size: 20px; */
+        display: none;
+    }
+
+    .bottom-image-sper {
+        margin-top: 20px;
+    }
+
+}
+
+
+
+
+
+
+
+
