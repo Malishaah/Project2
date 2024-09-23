@@ -56,6 +56,22 @@ li:hover {
     transform: scale(1.1);
    
 }
+.login {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap; /* Prevents "Logga in" from wrapping */
+  }
+  
+  .buy-ticket {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap; /* Prevents "Köp lott" from wrapping */
+  }
+  
+  .login i {
+    margin-right: 5px; /* Space between the icon and "Logga in" */
+  }
+  
 .hov:hover{
     color: white;
 }
@@ -114,10 +130,11 @@ li:hover {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding: 23px;
 }
  .logo {
     position: absolute;
-    width: 110px;
+    width: 120px;
     box-shadow: none;
     padding-left: 30px;
     padding-top: 10px;
@@ -437,9 +454,6 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 margin: 0;
 }
 
-.logo {
-width: 120px;
-}
 .card {
     width: 100%; 
 }
@@ -718,13 +732,8 @@ margin: 0px 150px;
         background-color: #feb924; 
         padding-bottom: 20px; 
     }
-.main-header
-{
-padding: 26px;
-}
-    .logo {
-        width: 80px; 
-        padding: 10px; 
+    .main-header {
+        padding: 26px;
     }
     .container {
         flex-direction: column; 
@@ -877,9 +886,7 @@ padding: 26px;
         flex-direction: column;
         padding: 26px 0; 
     }
-    .logo {
-        width: 80px; 
-    }
+    
     .hero img {
         width: 100%; 
         height: auto; 

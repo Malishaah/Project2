@@ -35,6 +35,22 @@ li:hover {
     transform: scale(1.1);
    
 }
+.login {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap; /* Prevents "Logga in" from wrapping */
+  }
+  
+  .buy-ticket {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap; /* Prevents "Köp lott" from wrapping */
+  }
+  
+  .login i {
+    margin-right: 5px; /* Space between the icon and "Logga in" */
+  }
+
 .hov:hover{
     color: white;
 }
@@ -77,7 +93,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 14.5px 0px;
+    padding: 39px 23px;
 }
 
 .main-header nav ul {
