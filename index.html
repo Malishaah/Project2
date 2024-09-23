@@ -1,143 +1,282 @@
 <!DOCTYPE html>
-<html lang="sv">
-
-<head>
+<h <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Svenska Postkodlotteriet</title>
     <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </head>
 
-<body>
-
-    <header>
-        <div class="logo">
-            <img src="images/logo.png" alt="Svenska Postkodlotteriet logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Erbjudanden</a></li>
-                <li><a href="#">Lotteriet</a></li>
-                <li><a href="#">Vinster</a></li>
-                <li><a href="#">Vinnare</a></li>
-                <li><a href="#">Välgörenhet</a></li>
-                <li><a href="#">TV</a></li>
-                <li><a href="#">Om oss</a></li>
-                <li><a href="#">Kundservice</a></li>
-            </ul>
-            <div class="user-options">
-                <a href="#">Logga in</a>
-                <a href="#" class="buy-lottery">Köp lott</a>
+    <body>
+        <header>
+            <div>
+                <a href="index.html"><img class="logo" src="images/logo.png" alt="Svenska Postkodlotteriet logo"></a>
             </div>
-        </nav>
-    </header>
+            <div class="main-header">
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav id="nav-menu">
+                    <ul>
+                        <li><a class="hov" href="Erbjudanden.html">Erbjudanden</a></li>
+                        <li><a class="hov" href="Omlotteriet.html">Lotteriet</a></li>
+                        <li><a class="hov" href="#">Vinster</a></li>
+                        <li><a class="hov" href="#">Vinnare</a></li>
+                        <li><a class="hov" href="#">Välgörenhet</a></li>
+                        <li><a class="hov" href="#">Kundservice</a></li>
+                        <li>
+                            <a href="#" class="login hov">
+                                <i class="fas fa-user"></i> Logga in
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="buy-ticket hov">Köp lott</a>
+                        </li>
+                        <li><a class="hov" href="#"><i class="fas fa-search"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    <section class="hero">
-        <div class="content">
-            <div class="left-content">
-                <img src="images/presenters.png" alt="Presenters">
+        <div class="hero">
+            <div class="content">
+                <div class="left-content">
+                    <img class="presenters" src="images/presenters.png" alt="Presenters">
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <section class="plus-premium-section">
+                <h2>Upplev mer med Plus och Premium</h2>
                 <button class="cta-button">Köp din lott</button>
-            </div>
-        </div>
-    </section>
-
-    <main>
-        <section class="plus-premium-section">
-            <h2>Upplev mer med Plus och Premium</h2>
-            <p>Få fler vinstchanser. Uppgradera din lott till Plus eller Premium senast den 30 september.</p>
-
-            <div class="cards-container">
-                <div class="card plus-card">
-                    <img src="images/plus-image.png" alt="Postkodlotteriet Plus">
-                </div>
-                <div class="card premium-card">
-                    <img src="images/premium-image.png" alt="Postkodlotteriet Premium">
-                </div>
-            </div>
-
-            <button class="cta-button">Läs mer om Plus och Premium</button>
-        </section>
-        <div class="container">
-            <div class="card">
-                <img src="images/jubla-ikapp.png" alt="Celebrate with neighbors">
-                <div class="content">
-                    <h3>Många nya vinster väntar</h3>
-                    <p>Med en enda lott har du chansen.</p>
-                    <a href="#">Se allt du kan vinna</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="images/vinn-adress.png" alt="Win at your address">
-                <div class="content">
-                    <h3>Du vinner på din adress</h3>
-                    <p>Vinstchanser, vinnare och välgörenhet.</p>
-                    <a href="#">Upptäck Postkodlotteriet</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="images/har-du-vunnit.png" alt="Have you won?">
-                <div class="content">
-                    <h3>Har du vunnit idag?</h3>
-                    <p>Logga in och se om det är din tur.</p>
-                    <a href="#">Rätta din lott</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="offer-section">
-            <div class="offer-content">
-                <div class="text-content">
-                    <h2>Spela spelet – och få ett bra erbjudande</h2>
-                    <p>Om du fångar gulduverten och når 120 poäng, får du ta del av ett bra erbjudande. Köp din lott 180
-                        kr/mån och få kryddkvarnar från Le Creuset (värde 679 kr) på köpet.</p>
-                    <a href="#">Börja spela</a>
-                </div>
-                <div class="image-content">
-                    <img src="images/Puff.png" alt="Spela spelet och vinn 119 miljoner">
-                </div>
-            </div>
-        </div>
-
-        <div class="contribution-section">
-            <div class="contribution-content">
-                <div class="image-content">
-                    <img src="images/lion-cub.png" alt="Lion cub image">
-                </div>
-                <div class="text-content">
-                    <h2>Var med och bidra</h2>
-                    <p>
-                        Det fina med Postkodlotteriet är att du har chans att vinna med grannarna varje dag, samtidigt
-                        som du bidrar till en bättre värld. Varje år går
-                        <strong>minst 1 miljard</strong> av överskottet till 61 ideella organisationer som gör världen
-                        lite bättre.
-                    </p>
-                    <a href="#">Läs mer om Postkodeffekten →</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="promo-section">
-            <div class="promo-image">
-                <img src="images/promo-image.png" alt="Promotions">
-            </div>
-            <div class="promo-text">
-                <p>
-                    Ovan visas ett urval av vinster som ingår i vinstplanen. Vinster för totalt 1,5 miljarder lottas ut
-                    under året,
-                    vilket motsvarar en vinstandel på ca 40 procent. Ny vinstchans varje dag. Åldersgräns 18 år.
-                    Stödlinjen.se.
-                    Lottpris 180 kr per månad. Med reservation för eventuella ändringar.
-                    *Om du uppgraderar din lott till Plus (kostnad 20 kr/mån) eller Premium (kostnad 40 kr/mån) har du
-                    chans att vinna
-                    våra Plus- och Premiumvinster.
+                <p class="pi">Få fler vinstchanser. Uppgradera din lott till Plus eller Premium senast den 30 september.
                 </p>
+
+                <div class="cards-container">
+                    <div class="card plus-card">
+                        <img src="images/plus-image.png" alt="Postkodlotteriet Plus">
+                    </div>
+                    <div class="card premium">
+                        <img src="images/premium-image.png" alt="Postkodlotteriet Premium">
+                    </div>
+                </div>
+
+                <button class="cta-button">Läs mer om Plus och Premium</button>
+            </section>
+            <div class="container">
+                <div class="card">
+                    <img src="images/jubla-ikapp.png" alt="Celebrate with neighbors">
+                    <div>
+                        <h3>Många nya vinster väntar</h3>
+                        <p class="pi">Med en enda lott har du chansen.</p>
+                        <button class="cta-button">Se allt du kan vinna</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/vinn-adress.png" alt="Win at your address">
+                    <div>
+                        <h3>Du vinner på din adress</h3>
+                        <p class="pi">Vinstchanser, vinnare och välgörenhet.</p>
+                        <button class="cta-button">Upptäck Postkodlotteriet</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/har-du-vunnit.png" alt="Have you won?">
+                    <div>
+                        <h3>Har du vunnit idag?</h3>
+                        <p class="pi">Logga in och se om det är din tur.</p>
+                        <button class="cta-button">Rätta din lott</button>
+                    </div>
+                </div>
             </div>
-        </div>
-    </main>
 
-</body>
+            <div class="offer-section">
+                <div class="offer-content">
 
-</html>
+                    <div class="image-content">
+                        <img class="puff" src="images/Puff.png" alt="Spela spelet och vinn 119 miljoner">
+                    </div>
+                    <div class="text-content">
+                        <h2>Spela spelet – och få ett bra erbjudande</h2>
+                        <p class="pi">Om du fångar gulduverten och når 120 poäng, får du ta del av ett bra erbjudande.
+                            Köp din lott 180
+                            kr/mån och få kryddkvarnar från Le Creuset (värde 679 kr) på köpet.</p>
+                        <button class="cta-button">Börja spela</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contribution-section">
+                <div class="contribution-content">
+                    <div class="image-content">
+                        <img class="puff" src="images/lion-cub.png" alt="Lion cub image">
+                    </div>
+                    <div class="text-content">
+                        <h2>Var med och bidra</h2>
+                        <p class="pi">
+                            Det fina med Postkodlotteriet är att du har chans att vinna med grannarna varje dag,
+                            samtidigt
+                            som du bidrar till en bättre värld. Varje år går
+                            <strong>minst 1 miljard</strong> av överskottet till 61 ideella organisationer som gör
+                            världen
+                            lite bättre.
+                        </p>
+                        <button class="cta-button">Läs mer om Postkodeffekten</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="promo-section">
+                <div class="promo-image">
+                    <img src="images/promo-image.png" alt="Promotions">
+                </div>
+                <div class="promo-text">
+                    <p class="pi">
+                        Ovan visas ett urval av vinster som ingår i vinstplanen. Vinster för totalt 1,5 miljarder lottas
+                        ut
+                        under året,
+                        vilket motsvarar en vinstandel på ca 40 procent. Ny vinstchans varje dag. Åldersgräns 18 år.
+                        Stödlinjen.se.
+                        Lottpris 180 kr per månad. Med reservation för eventuella ändringar.
+                        *Om du uppgraderar din lott till Plus (kostnad 20 kr/mån) eller Premium (kostnad 40 kr/mån) har
+                        du
+                        chans att vinna
+                        våra Plus- och Premiumvinster.
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-section">
+                <section class="top-section">
+                    <div class="dropdown-container">
+                        <div class="dropdown-btn">
+                            <button class="btn">Lotteriet</button>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="#">Erbjudande</a>
+                            <a href="#">Vinster</a>
+                            <a href="#">Vinnare</a>
+                            <a href="#">Så fungerar lotteriet</a>
+                        </div>
+                    </div>
+                    <div class="dropdown-container">
+                        <div class="dropdown-btn">
+                            <button class="btn">Välgörande</button>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="#">Våra förmånstagare</a>
+                            <a href="#">Bli förmånstagare</a>
+                            <a href="#">Ambassadörer</a>
+                            <a href="#">Postkodeffektion</a>
+                        </div>
+                    </div>
+                    <div class="dropdown-container">
+                        <div class="dropdown-btn">
+                            <button class="btn">Om oss</button>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="#">Om Postkodlotteriet</a>
+                            <a href="#">Hållbarhet</a>
+                            <a href="#">Press</a>
+                            <a href="#">Jobba hos oss</a>
+                        </div>
+                    </div>
+                    <div class="dropdown-container">
+                        <div class="dropdown-btn">
+                            <button class="btn">Legalt</button>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="#">Allmäna villkor</a>
+                            <a href="#">Lotterilicens</a>
+                            <a href="#">Spelansvar</a>
+                            <a href="#">Cookie policy</a>
+                            <a href="#">Personuppgiftspolicy</a>
+                            <a href="#">Personuppgiftspolicy partners</a>
+                            <a href="#">Informationssäkerhetspolicy</a>
+                            <a href="#">Visselblåsarfunktion</a>
+                        </div>
+                    </div>
+                    <div class="kontakt-lista">
+                        <div class="kontakt-info">
+                            <h2 class="kontakt-info-item">Kontakta oss</h2>
+                            <p>0771-22 55 22</p>
+                            <p class="kontakt-info-item">(helgfria vardagar kl 8-18)</p>
+                        </div>
+                        <div class="kontakt-links">
+                            <a class="kontakt-info-item" href="#">Vanliga frågor</a>
+                            <a class="kontakt-info-item" href="#">Webbplatskarta</a>
+                        </div>
+                    </div>
+                    <div class="icons-list">
+                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </section>
+                <div class="bottom-section">
+                    <div class="image-container">
+                        <img class="bottom-image-stödlinjen footerimg" src="images/stodlinjen-logotyp.svg" alt="">
+                        <div class="bottom-section-text">
+                            <p>Spelar du för mycket?</p>
+                            <p>Ring <a class="bottom-section-link" href="#">Stödlinjen</a> 020-81 91 00</p>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img class="bottom-image-spel footerimg" src="images/spel-for-dig-over-18-ar.svg" alt="">
+                        <div class="bottom-section-text">
+                            <p>Spel för dig över 18år</p>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img class="bottom-image footerimg" src="images/spelinspektionen.svg" alt="">
+                        <div class="bottom-section-text-spektion">
+                            <p>Lotterilicens beviljad för Svenska Postkodföreningen Box 193, 101 23 Stockholm Org.nr:
+                                802416-1146 Tel: 08-509 270 00</p>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img class="bottom-image-reklam footerimg" src="images/reklamombudsmannen-logo.png" alt="">
+                        <div class="bottom-section-text-reklam">
+                            <p>Vi stöder Reklamombudsmannen för etisk reklam.</p>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img class="bottom-image-sper footerimg" src="images/SPER-logo.png" alt="">
+                        <div class="bottom-section-text-reklam">
+                            <p>Sper företräder spelbranschen i Sverige</p>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img class="bottom-image-sper footerimg" src="images/sb-cert-iso-27001.png" alt="">
+                        <div class="bottom-section-text-reklam">
+                            <p>ISO 27001-certifierade</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            document.getElementById('hamburger').addEventListener('click', function () {
+                var navMenu = document.getElementById('nav-menu');
+                navMenu.classList.toggle('show');
+            });
+        </script>
+    </body>
+
+    </html>
