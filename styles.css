@@ -46,13 +46,13 @@ li {
     transition: transform 0.5s ease;
     font-weight: bold;
     padding: 0px 10px;
-     transition: background-color 0.7s ease;
+    transition: background-color 0.7s ease;
 }
 li:hover {
     background-color: #015ca9;
     color: white;
     border-radius: 20px;
-    transform: scale(1.1);
+    transform: scale(1.2);
    
 }
 .login {
